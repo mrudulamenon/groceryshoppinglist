@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadtable()">
+    <h1 id="head">Grocery Shopping List</h1>
+    <div id="listdiv" >
+        <label for="deptSelect">Choose department</label>
+        <select onchange='loadtable()'' name='Departmentselect' id='deptSelect'>
+            <option value='all' selected>All</option>
+            <option value='Food'>Food Items</option>
+            <option value='Stationary'>Stationary</option>
+            <option value='Health'>Health</option>
+        </select>
+        <table id="tbl1">
+            
+        </table>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
