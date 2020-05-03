@@ -5,15 +5,19 @@ body
     animation-duration: 4s;
     animation-iteration-count: infinite;
     text-align: center;
-    
+    background-image: url(./grocery1.png),url(./grocery3.png);
+    background-repeat: no-repeat    ;
+    background-position: bottom left,bottom right;
+    /* align-content: center; */
+    /* align-items: center; */
 }
   
   @keyframes example
 {
     0% {background-color: rgb(231, 248, 190);;}
     25% {background-color: rgb(159, 240, 156);}
-    50% {background-color: rgb(247, 219, 167);}
-    100% {background-color: rgb(177, 169, 250);}
+    50% {background-color: rgb(177, 169, 250);}
+    100% {background-color: rgb(235, 248, 190) ;}
 }
 #head
 {
@@ -25,11 +29,13 @@ body
     animation: text 3s infinite;
 }
 @keyframes text{
-    0%{
+    0%{letter-spacing: 1px;
     }
-    30%{
+    50%{
         letter-spacing: 5px;
-
+    }
+    100%{
+        letter-spacing: 1px;
     }
 }
 caption, label{
@@ -39,6 +45,9 @@ caption, label{
     color: rgb(2, 68, 2);
     text-decoration: underline;
 }
+label{
+    text-decoration: none;
+}
 #deptSelect{
     width: auto;
     height: 30px;
@@ -46,10 +55,13 @@ caption, label{
     font-weight: bold;
 }
 table{
-    width: 100%;
+    /* text-align: center; */
+    width: auto;
     border-collapse: collapse;
     background-color: aquamarine;
     border: 2px solid green;    
+    margin: auto;
+    margin-top: 20px;
 }
 th
 {
